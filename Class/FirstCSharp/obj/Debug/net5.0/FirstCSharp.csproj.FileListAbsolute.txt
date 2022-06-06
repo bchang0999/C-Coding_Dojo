@@ -1,0 +1,16 @@
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\bin\Debug\net5.0\FirstCSharp.exe
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\bin\Debug\net5.0\FirstCSharp.deps.json
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.json
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.dev.json
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\bin\Debug\net5.0\FirstCSharp.dll
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\bin\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\bin\Debug\net5.0\FirstCSharp.pdb
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.dll
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.pdb
+C:\Users\bchan\Desktop\C#\Class\FirstCSharp\obj\Debug\net5.0\FirstCSharp.genruntimeconfig.cache
