@@ -1,0 +1,15 @@
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.csproj.AssemblyReference.cache
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.AssemblyInfoInputs.cache
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.AssemblyInfo.cs
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.csproj.CoreCompileInputs.cache
+C:\Users\bchan\Desktop\C#\Core\WizardCore\bin\Debug\net6.0\WizardCore.exe
+C:\Users\bchan\Desktop\C#\Core\WizardCore\bin\Debug\net6.0\WizardCore.deps.json
+C:\Users\bchan\Desktop\C#\Core\WizardCore\bin\Debug\net6.0\WizardCore.runtimeconfig.json
+C:\Users\bchan\Desktop\C#\Core\WizardCore\bin\Debug\net6.0\WizardCore.dll
+C:\Users\bchan\Desktop\C#\Core\WizardCore\bin\Debug\net6.0\WizardCore.pdb
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.dll
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\refint\WizardCore.dll
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.pdb
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\WizardCore.genruntimeconfig.cache
+C:\Users\bchan\Desktop\C#\Core\WizardCore\obj\Debug\net6.0\ref\WizardCore.dll
