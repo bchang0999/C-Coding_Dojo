@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="text-center">
+    <h1 class="display-4">@Context.Session.GetString("Assignment")</h1>
+
+
+<input type="text" value="@ViewBag.final">
+<input type="text" value="@ViewBag.counted">
+<a href="/Process"><button>Randomize</button></a>
+
+</div>
