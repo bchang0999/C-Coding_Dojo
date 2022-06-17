@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+<div>
+    <a href="/">Home</a>
+</div>
+<div class="text-center">
+    <h1 class="display-4">Lets Start Cooking</h1>
+</div>
+@* ///////////////////////// 3 columns *@
+<div>
+    <form action="/Create/Process" method="Post">
+        <div class="row">
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="Chef" class="form-label">Chef's Name</label>
+                    <input asp-for="Chef" class="form-control">
+                    <span asp-validation-for="Chef" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Name" class="form-label">Name Of Dish</label>
+                    <input asp-for="Name" class="form-control">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Calories" class="form-label"># of Calories</label>
+                    <input asp-for="Calories" class="form-control">
+                    <span asp-validation-for="Calories" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="Tastiness">Tastiness</label>
+                    <select asp-for="Tastiness" class="form-control" >
+                        <option Value="1">1 - Unedible</option>
+                        <option value="2">2 - Edible</option>
+                        <option Value="3">3 = Okay</option>
+                        <option Value="4">4 - Good</option>
+                        <option Value="5">5 - Amazing</option>
+                        <span asp-validation-for="Tastiness" class="text-danger"></span>
+                    </select>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="Description" class="form-label">Description</label>
+                    <input asp-for="Description" class="form-control">
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div>
