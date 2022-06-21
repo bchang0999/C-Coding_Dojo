@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+
+<div class="text-center">
+    <h1> Add A Dish!</h1>            
+</div>
+<a href="/">Home</a>
+
+<div>
+    <form action="/meals/process" method="post">
+        <div class="Row">
+            <div class="col-4">
+                <label for="Name" class="form-label">Name</label>
+                <input asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="Description" class="form-label">Description</label>
+                    <input asp-for="Description" class="form-control">
+                    <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="col-4">
+                <label for="Calories" class="form-label">Calories</label>
+                <input asp-for="Calories" class="form-control">
+                <span asp-validation-for="Calories" class="text-danger"></span>
+            </div>
+            <div class="col-4">
+                <select class="form-control" asp-for="ChefId"> 
+                    @foreach (Chef i in @ViewBag.Cooks)
+                    {
+                        <option value="@i.ChefId">@i.Fname @i.Lname</option>
+                    }
+                </select>
+            </div>
+            <div class="col-4">
+                <label for="Tastiness" class="form-label">Tastiness</label>
+                <input asp-for="Tastiness" type="number"  class="form-control">
+                <span asp-validation-for="Tastiness" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <input type="submit" value="Add Dish" class="w=100 btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>
