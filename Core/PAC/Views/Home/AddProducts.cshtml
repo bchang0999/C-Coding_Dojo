@@ -1,0 +1,40 @@
+@model Product
+<div class="text-center">
+    <h1>@ViewBag.Two.Name</h1>
+</div>
+
+
+
+<div class="d-flex justify-content-around ">
+    <div class="d-flex  flex-column">
+        <h3 class="mb-auto p-2">Products</h3>
+        <div class="table.table-striped me-5">
+            <table class="table.table-striped me-5">
+            @foreach (Association i in ViewBag.Two.ProductsInCategory)
+                {
+                    <tr>
+                        <td><h5>-@i.Product.Name</h5></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    
+    
+
+    
+    <div class="d-flex  flex-column">
+        <h3 class="mb-auto p-2">Add Products</h3>
+        <div class="table.table-striped me-5">
+            <form action="/AddProduct/@ViewBag.Two.CategoryId" method="post">
+                <select class="form-control" asp-for="ProductId">
+                    @foreach (Product i in @ViewBag.ProductsName)
+                    {
+                        <option value="@i.ProductId">@i.Name</option>
+                    }
+                </select>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+    </div>
+</div>

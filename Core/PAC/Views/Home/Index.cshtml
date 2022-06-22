@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Product
+
+<div class="text-center">
+    <h1 class="display-4">Products | <a href="/categories">Categories</a></h1>
+    <div class="d-flex justify-content-around ">
+        <div class="d-flex  flex-column">
+            <h3 class="mb-auto p-2">New Product</h3>
+            <div class="d-flex justify-content-between ">
+                <form action="/create" method="post">
+                    <div class="d-flex justify-content-between">
+                        <label>
+                            <h4>Name</h4>
+                        </label>
+                        <input asp-for="Name" class="form control ms-5">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="" class="formtable">
+                            <h4>Description</h4>
+                        </label>
+                        <input asp-for="Description" class="form control">
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <label for="" class="formtable">
+                            <h4>Price</h4>
+                        </label>
+                        <input asp-for="Price" class="form control ms-5">
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <input type="submit" value="Create">
+                </form>
+            </div>
+            
+        </div>
+        <div class="d-flex align-items-start flex-column" style="height: 200px;">
+            <h3  class="mr-5">Existing Products</h3>
+            <table class="table.table-striped ms-5">
+                @foreach (Product i in ViewBag.AllItems)
+                {
+                    <tr>
+                        <td><a href="/Product/@i.ProductId">@i.Name</a></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>

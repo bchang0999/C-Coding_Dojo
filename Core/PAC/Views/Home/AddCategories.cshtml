@@ -1,0 +1,40 @@
+@model Category
+<div class="text-center">
+    <h1>@ViewBag.One.Name</h1>
+</div>
+
+
+
+<div class="d-flex justify-content-around ">
+    <div class="d-flex  flex-column">
+        <h3 class="mb-auto p-2">Categories</h3>
+        <div class="table.table-striped me-5">
+            <table class="table.table-striped me-5">
+            @foreach (Association i in ViewBag.One.ListedCategories)
+                {
+                    <tr>
+                        <td><h5>-@i.Category.Name</h5></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    
+    
+
+    
+    <div class="d-flex  flex-column">
+        <h3 class="mb-auto p-2">Add Category</h3>
+        <div class="table.table-striped me-5">
+            <form action="/AddCategory/@ViewBag.One.ProductId" method="post">
+                <select class="form-control" asp-for="CategoryId">
+                    @foreach (Category i in @ViewBag.CategoriesName)
+                    {
+                        <option value="@i.CategoryId">@i.Name</option>
+                    }
+                </select>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+    </div>
+</div>
