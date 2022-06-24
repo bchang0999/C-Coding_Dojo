@@ -1,0 +1,23 @@
+@model Wedding
+<div class="font-weight-bold d-flex justify-content-around">
+    <h1>@ViewBag.WeddingInfo.WedderOne and @ViewBag.WeddingInfo.WedderTwo's Wedding</h1>
+    <a href="/Dashboard">Dashboard</a>
+    <a href="/">Log Out</a>
+</div>
+<div class="font-weight-bold d-flex justify-content-around">
+    <div>@ViewBag.WeddingInfo.Date.ToLongDateString()</div>
+    <div>
+        <h5>Guests</h5>
+        @foreach (var i in ViewBag.WeddingInfo.Guests)
+        {
+            @i.User.Fname
+            @i.User.Lname
+        }
+    </div>
+    <div>
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDo5Gi7N4OiiUDbfCV1ouK_UzSKgJ56iks
+    &q=@ViewBag.WeddingInfo.Address">
+        </iframe>
+    </div>
+</div>

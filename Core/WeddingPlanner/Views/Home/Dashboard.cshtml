@@ -1,0 +1,42 @@
+@model List<Wedding>
+<div class="font-weight-bold d-flex justify-content-around">
+    <h1>Welcome to the Wedding Planner</h1>
+    <a href="/Dashboard">Dashboard</a>
+    <a href="/">Log Out</a>
+</div>
+
+<table class="table table-striped">
+
+    <tr>
+        <th scope="col">Wedding</th>
+        <th scope="col">Date</th>
+        <th scope="col">Guest</th>
+        <th scope="col">Action</th>
+    </tr>
+    @foreach (Wedding i in Model)
+    {
+        <tr class=>
+            <td><a href="/WeddingDetails/@i.WeddingId">@i.WedderOne & @i.WedderTwo</a></td>
+            <td>@i.Date.ToLongDateString()</td>
+            <td>@i.Guests.Count</td>
+            <td class="d-flex justify-content-between">
+                @if (i.Guests.Any(a=>a.UserId == Context.Session.GetInt32("UserId")))
+                {
+                    <a href="/unRSVP/@i.WeddingId"><button class="btn btn-warning">unRSVP</button></a>
+                } else {
+                    <a href="/RSVP/@i.WeddingId"><button class="btn btn-primary">RSVP</button></a>
+                }
+                <div>
+                    @if(i.UserId == Context.Session.GetInt32("UserId"))
+                    {
+                        <a href="/delete/@i.WeddingId"><button class="btn btn-danger">Delete</button></a>
+                    }
+                </div>
+                
+            </td>
+        </tr>
+    }
+</table>
+<div  class="d-flex align-items-end flex-column">
+<a href="/WeddingPlanner"><button>New Wedding</button></a>
+</div>
